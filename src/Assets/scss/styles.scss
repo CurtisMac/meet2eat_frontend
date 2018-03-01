@@ -1,0 +1,25 @@
+body {
+    background-color:#485562;
+}
+
+$heading-color:#7CCDD1;
+$heading-font: 'Fira Sans Condensed', sans-serif;
+$heading-font-size:64px;
+$heading-font-weight: 600;
+
+.heading {
+    color:$heading-color;
+    font-family:$heading-font;
+    font-size:$heading-font-size;
+    margin-left: 45px;
+}
+
+$body-font: 'Fira Sans Condensed', sans-serif;
+$body-color: white;
+$body-font-size:1rem;
+
+.bodyText {
+    color: $body-color;
+    font-family: $body-font;
+    font-size: $body-font-size;
+}
