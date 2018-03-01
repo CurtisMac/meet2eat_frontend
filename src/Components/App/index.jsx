@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Profile from './Profile'
+<<<<<<< HEAD
 import axios from 'axios'
+=======
+import Nav from './Nav'
+import Header from './Header'
+
+>>>>>>> 69aa6940638cc49dd214add713c6fa77713d4292
 
 class App extends Component {
   constructor(){
@@ -26,12 +32,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Nav/>
+        <Header/>
+        <Profile />
       </div>
     );
   }

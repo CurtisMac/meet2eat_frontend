@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 
+
 class Profile extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="profile">
+        <img src="/profile_photo.jpeg" alt=""/>
+        <h3>Sandra</h3>
+        <ul>
+          <h3>Eats:</h3>
+          <li>Pizza</li>
+          <li>Sushi</li>
+          <li>Hotpot</li>
+          <li>Pho</li>
+          <li>Ramen</li>
+          <li>Tacos</li>
+        </ul>
+        <h4>Current Location: 455 Granville, Vancouver, Bc.</h4>
+
       </div>
     );
   }
