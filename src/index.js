@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Components/App';
-import axios from 'axios'
 import { BrowserRouter as Router,
 Route } from "react-router-dom";
 
