@@ -6,4 +6,3 @@ import { BrowserRouter as Router,
 Route } from "module";
 
 ReactDOM.render(<Router><Route path='/' component={App} /></Router>, document.getElementById('root'));
-registerServiceWorker();
