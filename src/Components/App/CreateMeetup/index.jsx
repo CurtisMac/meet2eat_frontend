@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import axios from 'axios'
 import PickedResto from './PickResto'
-import PickedTime from './PickedTime'
+import AddTime from './AddTime'
 // import Confirm from './Confirm'
 import Complete from './Complete'
 
@@ -40,10 +40,10 @@ export default class CreateMeetup extends Component {
 
   confirm = () => {
     let data = {
-      restaurant:this.state.pickedResto,
-      start:this.state.StarTime,
-      end:this.state.EndTime,
-      createdby:this.state.CreatedBy
+      restaurant: this.state.pickedResto,
+      start: this.state.StarTime,
+      end: this.state.EndTime,
+      createdby: this.state.CreatedBy
     }
 
     // axios.post(this.apiCreat,data).then((res)=>{
@@ -56,8 +56,8 @@ export default class CreateMeetup extends Component {
     if (this.state.step === 1) {
       return (
         <div className="profile">
-          <PickedResto 
-          pickedResto={this.pickedResto}
+          <PickedResto
+            pickedResto={this.pickedResto}
           />
         </div>
       )
@@ -65,8 +65,8 @@ export default class CreateMeetup extends Component {
     if (this.state.step === 2) {
       return (
         <div className="profile">
-          <PickedTime 
-          pikedTime={this.pikedTime}
+          <AddTime
+            pikedTime={this.pikedTime}
           />
         </div>
       )
@@ -75,8 +75,8 @@ export default class CreateMeetup extends Component {
     if (this.state.step === 3) {
       return (
         <div className="profile">
-          <Complete 
-          confirm={this.confirm}
+          <Complete
+            confirm={this.confirm}
           />
         </div>
       )
