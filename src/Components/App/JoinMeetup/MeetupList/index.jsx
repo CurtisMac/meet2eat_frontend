@@ -10,6 +10,7 @@ export default class MeetupList extends Component {
 
             <div className="meetList col s12">
                 <h3 className="center-align">These are the meetups near you!</h3>
+                <p></p>
                 <ul className="collection">
                     <li className="collection-item avatar">
                         <img src="noodles.jpeg" alt="" className="circle" />

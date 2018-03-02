@@ -24,6 +24,10 @@ h3 {
  color: $h3-font-color;
 }
 
+ul.collection {
+    z-index: -1;
+}
+
 
 
 @import './partials/Profile';

@@ -14,6 +14,9 @@ html {
 h3 {
   color: #E2E8A8; }
 
+ul.collection {
+  z-index: -1; }
+
 h4 {
   color: white; }
 
@@ -38,11 +41,13 @@ ul.bodyText {
   background-color: #7CCDD1;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 nav {
   position: fixed;
   bottom: 0;
+  z-index: 1;
   background-color: #FC7962; }
 
 nav i.material-icons {
