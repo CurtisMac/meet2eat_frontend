@@ -14,7 +14,7 @@ class Profile extends Component {
           <li>Hotpot</li> 
           <li>Pho</li>
           <li>Ramen</li>
-          <li>Tacos</li>
+          <li>Tacos</li> 
         </ul>
         <h4>Current Location </h4>
         <p className="bodyText"> <i className="em em-round_pushpin"></i>455 Granville, Vancouver, Bc.</p>
