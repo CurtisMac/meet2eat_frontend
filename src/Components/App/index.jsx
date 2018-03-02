@@ -24,8 +24,8 @@ class App extends Component {
   componentWillMount = () => {
 
     const username = 'andrew'
-    axios.post(this.apiUrl1+'login', {username}).then((res) => {
-     this.setState({userInfo:res.data.info})
+    axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
+      this.setState({ userInfo: res.data.info })
     })
 
   }
@@ -46,14 +46,14 @@ class App extends Component {
                   userInfo={this.state.userInfo}
                 />
               } />
-              <Route path={`${match.url}create`} render={() =>
+              <Route path='/create' render={() =>
                 <CreateMeetup
                   user={this.state.userInfo}
                 />
               } />
               <Route path={`${match.url}join`} render={() =>
-                <JoinMeetup 
-                user={this.state.userInfo}
+                <JoinMeetup
+                  user={this.state.userInfo}
                 />
               } />
             </Switch>

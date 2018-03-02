@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 export default class Profile extends Component {
   render() {
     let user = this.props.userInfo
-    console.log(user)
     return (
       <div className="profile col s12">
         <img className="circle responsive-img" src="/profile_photo.jpeg" alt="" />
