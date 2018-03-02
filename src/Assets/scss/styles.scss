@@ -28,6 +28,9 @@ ul.collection {
     z-index: -1;
 }
 
+.secondary-content {
+    color:#FC7962;
+}
 
 
 @import './partials/Profile';
@@ -35,3 +38,4 @@ ul.collection {
 @import './partials/Nav';
 @import './partials/PickTime';
 @import './partials/Confirm';
+@import './partials/Login';

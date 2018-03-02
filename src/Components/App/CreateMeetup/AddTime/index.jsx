@@ -15,7 +15,7 @@ export default class Pickedtime extends Component {
             <div className="row">
               <div className="input-field col s12">
                 <input id="timer" type="text"/>
-                <label className="bodyText" for="timer">Time</label>
+                <label className="bodyText" htmlFor="timer">Time</label>
               </div>
             </div>
           </form>
