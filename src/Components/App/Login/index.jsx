@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 
 class Login extends Component {
@@ -6,20 +7,20 @@ class Login extends Component {
         return (
             <div className="logIn">
                 <h3 className="center-align">Start Here</h3>
-                <form className="col s12">
+                <form className="col s12" ref={self => this.loginForm = self}>
                     <div className="row">
                         <div className="input-field col s12">
-                            <input id="username" type="text" className="validate" />
+                            <input id="username" type="text" className="validate" name="username"/>
                             <label htmlFor="username">Last Name</label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="input-field col s12">
-                            <input id="password" type="password" className="validate" />
+                            <input id="password" type="password" className="validate" name="password"/>
                             <label htmlFor="password">Password</label>
                         </div>
                     </div>
-                    <a type="submit" name="action" className="btn btn-large">Go!</a>
+                    <Link to='/' type="submit" name="login" className="btn btn-large" onClick={()=>{this.props.login(this.loginForm)}}>Go!</Link>
                 </form>
             </div>
         );

@@ -14,7 +14,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      userInfo: {}
+      userInfo: {},
     }
 
     // this.apiUrl = 'https://backend-m2e.herokuapp.com/'
@@ -22,12 +22,23 @@ class App extends Component {
 
   }
 
+  componentDidUpdate
+
   componentWillMount = () => {
 
-    const username = 'andrew'
+    const  username = localStorage.getItem('username')
     axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
       this.setState({ userInfo: res.data })
     })
+
+  }
+
+  login =(input)=>{
+    let {username , password}= input
+    localStorage.setItem('username',username.value)
+    // this.setState({login:{
+    //   username:username.value,
+    // password:password.value}})
 
   }
 
@@ -60,7 +71,7 @@ class App extends Component {
 
               <Route path={`${match.url}login`} render={() =>
                 <Login
-                  user={this.state.userInfo}
+                  login={this.login}
                 />
               } />
             </Switch>
