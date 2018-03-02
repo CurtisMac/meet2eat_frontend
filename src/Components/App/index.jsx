@@ -57,6 +57,12 @@ class App extends Component {
                   user={this.state.userInfo}
                 />
               } />
+
+              <Route path={`${match.url}login`} render={() =>
+                <Login
+                  user={this.state.userInfo}
+                />
+              } />
             </Switch>
           </div>
         </div>
