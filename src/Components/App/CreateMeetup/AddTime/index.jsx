@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 export default class Pickedtime extends Component {
 
+ 
 
-
-  render() {
+  render() { 
     return (
       <div className="pickTime">
         <h3 className="center-align">Pick a time</h3>
