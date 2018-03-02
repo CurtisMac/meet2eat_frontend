@@ -15,7 +15,7 @@ export default class Confirm extends Component {
                         <img src="/noodles.jpeg" alt="" className="circle" />
                         <span className="title">Pholicious</span>
                         <p>insert address<br />
-                            insert rating</p><br />
+                            insert rrrating</p><br />
                         <p> at 2pm</p>
                         <a href="#!" className="secondary-content"><i className="material-icons">restaurant_menu</i></a>
                     </li>
