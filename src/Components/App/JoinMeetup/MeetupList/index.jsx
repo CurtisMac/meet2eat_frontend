@@ -46,7 +46,7 @@ export default class MeetupList extends Component {
                         <img src="noodles.jpeg" alt="" className="circle" />
                         <span className="title">Pholicious</span>
                         <p>insert address<br />insert meetup owner</p>
-                        <a href="#!" className="secondary-content"><i className="material-icons">group_add</i></a>
+                        <a href="https://www.google.ca" className="secondary-content"><i className="material-icons">group_add</i></a>
                     </li>
                 </ul>
             </div>

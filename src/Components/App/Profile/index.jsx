@@ -18,7 +18,7 @@ export default class Profile extends Component {
           <li>Tacos</li> 
         </ul>
         <h4>Current Location </h4>
-        <p className="bodyText"> <i className="em em-round_pushpin"></i>455 Granville, Vancouver, Bc.</p>
+        <p className="bodyText"> <i className="em em-round_pushpin"></i>455 Granville, Vancouver, BC.</p>
         <h4>Bio</h4>
         <p className="bodyText">
           {user.bio}</p>
