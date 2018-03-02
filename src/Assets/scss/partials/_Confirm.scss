@@ -1,3 +1,14 @@
 .buttons {
     display:flex;
+    justify-content: space-between;
+    margin-top:120px;
+}
+
+.btn {
+    background-color:#4C99AB;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #E2E8A8;
+    color: #485562;
 }
