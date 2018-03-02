@@ -29,4 +29,4 @@ class CreateMeetup extends Component {
   }
 }
 
-export default CreateMeetup;
+export default PickedResto;
