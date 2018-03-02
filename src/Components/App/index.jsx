@@ -17,14 +17,14 @@ class App extends Component {
       userInfo: {},
     }
 
-    // this.apiUrl = 'https://backend-m2e.herokuapp.com/'
+    this.apiUrl = 'https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
-  componentDidUpdate=()=>{
+  componentWillMount=()=>{
     const  username = localStorage.getItem('username')
-    axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
+    axios.post(this.apiUrl + 'login', { username }).then((res) => {
       this.setState({ userInfo: res.data })
     })
   

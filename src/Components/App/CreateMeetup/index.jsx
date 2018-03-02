@@ -16,14 +16,16 @@ export default class CreateMeetup extends Component {
       // CreatedBy:this.props.user.name
       step: 1
     }
-    // this.apiCreate='https://backend-m2e.herokuapp.com/'
+    this.apiCreate='https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
   componentWillMount = () => {
     let user = this.props.user
-    axios.post(this.apiUrl1, user).then((res) => {
+    console.log(user.currentLocation)
+    axios.post(this.apiCreate, {lat:user.currentLocation.lat,long:user.currentLocation.long}).then((res) => {
+      console.log(res.data)
       this.setState({ ListResto: res.data })
     })
 
@@ -56,7 +58,7 @@ export default class CreateMeetup extends Component {
       createdby: this.state.CreatedBy
     }
 
-    // axios.post(this.apiCreat,data).then((res)=>{
+    // axios.post(this.apiUrl1 + create, data).then((res)=>{
 
     // })
   }
