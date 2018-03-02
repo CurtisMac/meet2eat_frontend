@@ -11,7 +11,7 @@ class Profile extends Component {
         <ul className="bodyText">
           <li>Pizza</li>
           <li>Sushi</li>
-          <li>Hotpot</li>
+          <li>Hotpot</li> 
           <li>Pho</li>
           <li>Ramen</li>
           <li>Tacos</li>
