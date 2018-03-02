@@ -3,6 +3,8 @@ import PickedTime from './PickedTime'
 import MeetupList from './MeetupList'
 import Confirm from './confirm'
 // import confirm from './Confirm'
+import axios from 'axios'
+
 
 
 export default class JoinMeetup extends Component {
@@ -12,21 +14,23 @@ export default class JoinMeetup extends Component {
       // user:this.props.user,
       MeetupList: [],
       PickedTime: '',
-      step: 3
+      step: 1
     }
-    this.apiJoin = ''
+    this.apiCreate='https://backend-m2e.herokuapp.com/'
+    this.apiUrl1 = 'http://localhost:8080/'
+  
   }
 
 
-  PickedTime = (start, end) => {
+  PickedTime = (time) => {
     this.setState({
       step: 2,
-      StartTime: start,
-      EndTime: end
+      PickedTime: time
     })
- // axios.post(this.apiCreat,data).then((res)=>{
-
-    // })
+let data=this.state.PickedTime
+ axios.post(this.apiUrl1+'meetups', data).then((res)=>{
+  console.log(res.data)
+    })
 
   }
 
