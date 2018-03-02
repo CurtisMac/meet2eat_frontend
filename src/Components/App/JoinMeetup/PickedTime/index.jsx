@@ -7,15 +7,19 @@ export default class PickedTime extends Component {
 
   render() {
     return (
-      <div className="restList">
-        <ul className="collection">
-          <li className="collection-item avatar">
-            <img src="noodles.jpeg" alt="" class="circle" />
-            <span className="title">Pholicious1</span>
-            <p><br />Second Line</p>
-            <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
-          </li>
-        </ul>
+      <div className="pickedTime">
+        <h3 className="center-align">Pick a time</h3>
+        <h3 className="center-align"><i className="large material-icons">access_time</i></h3>
+        <div className="row">
+          <form className="col s12">
+            <div className="row">
+              <div className="input-field col s12">
+                <input id="timer" type="text" />
+                <label className="bodyText" for="timer">Time</label>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
