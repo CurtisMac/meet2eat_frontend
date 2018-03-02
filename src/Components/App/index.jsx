@@ -51,7 +51,9 @@ class App extends Component {
                 />
               } />
               <Route path={`${match.url}join`} render={() =>
-                <JoinMeetup />
+                <JoinMeetup 
+                user={this.state.userInfo}
+                />
               } />
             </Switch>
           </div>
