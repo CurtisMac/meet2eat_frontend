@@ -17,7 +17,7 @@ class App extends Component {
       userInfo: {},
     }
 
-    this.apiUrl = 'https://backend-m2e.herokuapp.com/'
+    // this.apiUrl = 'https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }

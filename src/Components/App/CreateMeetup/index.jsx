@@ -16,14 +16,14 @@ export default class CreateMeetup extends Component {
       // CreatedBy:this.props.user.name
       step: 1
     }
-    this.apiCreate='https://backend-m2e.herokuapp.com/'
+    // this.apiCreate='https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
   componentWillMount = () => {
     let user = this.props.user
-    axios.post(this.apiUrl1 + 'create', user).then((res) => {
+    axios.post(this.apiUrl1, user).then((res) => {
       this.setState({ ListResto: res.data })
     })
 
