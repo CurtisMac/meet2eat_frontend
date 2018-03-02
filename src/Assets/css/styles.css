@@ -2,7 +2,8 @@ body {
   background-color: #485562; }
 
 .container {
-  height: a; }
+  height: auto;
+  padding-top: 140px; }
 
 .bodyText {
   color: #7CCDD1;
@@ -27,9 +28,6 @@ ul.bodyText {
 .em, .em-svg {
   height: 1em;
   width: 1em; }
-
-.profile.col.s12 {
-  padding-top: 140px; }
 
 .heading {
   color: #485562;

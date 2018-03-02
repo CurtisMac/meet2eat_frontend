@@ -39,7 +39,7 @@ class CreateMeetup extends Component {
     render() {
         return (
             <div className="profile">
-              test
+            <h3 className="center-align">Pick a Restaurant</h3>
             </div>
         );
     }
