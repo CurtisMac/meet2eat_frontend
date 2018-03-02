@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PickedTime from './PickedTime'
 import MeetupList from './MeetupList'
-import Complete from './complete'
+import Confirm from './confirm'
 // import confirm from './Confirm'
 
 
@@ -12,7 +12,7 @@ export default class JoinMeetup extends Component {
       // user:this.props.user,
       MeetupList: [],
       PickedTime: '',
-      step: 2
+      step: 3
     }
     this.apiJoin = ''
   }
@@ -72,7 +72,7 @@ export default class JoinMeetup extends Component {
     if (this.state.step === 3) {
       return (
         <div className="profile">
-          <Complete
+          <Confirm
             confirm={this.confirm}
           />
         </div>
