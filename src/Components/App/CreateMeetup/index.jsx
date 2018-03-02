@@ -6,66 +6,82 @@ import PickedTime from './PickedTime'
 import Complete from './Complete'
 
 export default class CreateMeetup extends Component {
-  constructor (){
+  constructor() {
     super()
-    this.state={
-      ListResto:[],
-      PickedResto:{},
-      StartTime:'',
-      EndTime:'',
+    this.state = {
+      ListResto: [],
+      PickedResto: {},
+      StartTime: '',
+      EndTime: '',
       // CreatedBy:this.props.user.name
-      step:1
+      step: 1
     }
     this.apiCreat = ''
   }
 
-  pickedResto=(input)=>{
+  pickedResto = (input) => {
 
     this.setState({
-      step:2,
-      PickedResto:{},
+      step: 2,
+      PickedResto: input
     })
-  
-  }
-
-  pikedTime=(start, end)=>{
-    this.setState({step:3})
-
 
   }
 
-  confirm=()=>{
+  pikedTime = (start, end) => {
+    this.setState({
+      step: 3,
+      StartTime: start,
+      EndTime: end
+    })
 
-    // axios.post(this.apiCreat, ).then((res)=>{
+
+  }
+
+  confirm = () => {
+    let data = {
+      restaurant:this.state.pickedResto,
+      start:this.state.StarTime,
+      end:this.state.EndTime,
+      createdby:this.state.CreatedBy
+    }
+
+    // axios.post(this.apiCreat,data).then((res)=>{
 
     // })
   }
 
- 
-    render() {
-      if(this.state.step===1){
-        return (
-          <div className="profile">
-          <PickedResto />
-          </div>
-      )
-      }
-      if(this.state.step===2){
-        return (
-          <div className="profile">
-          <PickedTime />
-          </div>
-      )
-      }
 
-      if(this.state.step===3){
-        return (
-          <div className="profile">
-          <Complete />
-          </div>
+  render() {
+    if (this.state.step === 1) {
+      return (
+        <div className="profile">
+          <PickedResto 
+          pickedResto={this.pickedResto}
+          />
+        </div>
       )
-      }
-       
     }
+    if (this.state.step === 2) {
+      return (
+        <div className="profile">
+          <PickedTime 
+          pikedTime={this.pikedTime}
+          />
+        </div>
+      )
+    }
+
+    if (this.state.step === 3) {
+      return (
+        <div className="profile">
+          <Complete 
+          confirm={this.confirm}
+          />
+        </div>
+      )
+    }
+
+  }
 }
 
