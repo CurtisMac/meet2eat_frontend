@@ -15,7 +15,7 @@ export default class PickedResto extends Component {
             <p>{restaurant.location.adress}<br />{restaurant.user_rating.rating_text}</p>
             <a href={restaurant.menu_url} className="secondary-content"><i className="material-icons">restaurant_menu</i></a>
             
-            <button className="btn btn-large" type="button" onClick={()=>{ this.props.pickedResto(2)}} >pick</button>
+            <a className="btn btn-large" type="button" onClick={()=>{ this.props.pickedResto(2)}} >pick</a>
           </li>
       )
     })
