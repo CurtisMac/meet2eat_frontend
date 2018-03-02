@@ -23,10 +23,9 @@ export default class CreateMeetup extends Component {
 
   componentWillMount = () => {
     let user = this.props.user
-    console.log(user.currentLocation)
-    axios.post(this.apiCreate, {lat:user.currentLocation.lat,long:user.currentLocation.long}).then((res) => {
-      console.log(res.data)
-      this.setState({ ListResto: res.data })
+    axios.post(this.apiUrl1, {lat:user.currentLocation.lat,long:user.currentLocation.long}).then((res) => {
+      console.log(res.data[0].nearby_restaurants)
+      this.setState({ ListResto: res.data[0].nearby_restaurants })
     })
 
   }
