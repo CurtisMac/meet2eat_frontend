@@ -35,10 +35,7 @@ class CreateMeetup extends Component {
     // })
   }
 
-  changestep=()=>{
-
-
-  }
+ 
     render() {
       if(this.state.step===1){
         return (
