@@ -22,7 +22,7 @@ class App extends Component {
 
   }
 
-  componentWillMount=()=>{
+  componentDidUpdate=()=>{
     const  username = localStorage.getItem('username')
     const username2= 'sandra'
     axios.post(this.apiUrl + 'login', { username2 }).then((res) => {
