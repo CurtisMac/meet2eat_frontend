@@ -6,6 +6,7 @@ import Header from './Header'
 import CreateMeetup from './CreateMeetup'
 import JoinMeetup from './JoinMeetup'
 import { Route, Switch } from 'react-router-dom'
+import '../../Assets/css/styles.css';
 
 
 class App extends Component {
@@ -32,10 +33,8 @@ class App extends Component {
 
     return (
       <div className="App">
-
-        <Nav />
         <Header />
-
+        <Nav />
         <Switch>
           <Route exact path={match.url} render={() =>
             <Profile 

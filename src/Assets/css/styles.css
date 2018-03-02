@@ -1,0 +1,23 @@
+body {
+  background-color: #485562; }
+
+.bodyText {
+  color: #7CCDD1;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1rem; }
+
+nav {
+  position: fixed;
+  bottom: 0; }
+
+h3 {
+  color: #E2E8A8; }
+
+h4 {
+  color: white; }
+
+.heading {
+  color: #7CCDD1;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 64px;
+  margin-left: 45px; }

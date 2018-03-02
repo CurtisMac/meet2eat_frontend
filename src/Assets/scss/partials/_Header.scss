@@ -1,0 +1,11 @@
+$heading-color:#7CCDD1;
+$heading-font: 'Fira Sans Condensed', sans-serif;
+$heading-font-size:64px;
+$heading-font-weight: 600;
+
+.heading {
+    color:$heading-color;
+    font-family:$heading-font;
+    font-size:$heading-font-size;
+    margin-left: 45px;
+}

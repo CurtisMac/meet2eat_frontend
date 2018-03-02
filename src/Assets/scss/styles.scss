@@ -2,20 +2,8 @@ body {
     background-color:#485562;
 }
 
-$heading-color:#7CCDD1;
-$heading-font: 'Fira Sans Condensed', sans-serif;
-$heading-font-size:64px;
-$heading-font-weight: 600;
-
-.heading {
-    color:$heading-color;
-    font-family:$heading-font;
-    font-size:$heading-font-size;
-    margin-left: 45px;
-}
-
 $body-font: 'Fira Sans Condensed', sans-serif;
-$body-color: white;
+$body-color: #7CCDD1;
 $body-font-size:1rem;
 
 .bodyText {
@@ -23,3 +11,11 @@ $body-font-size:1rem;
     font-family: $body-font;
     font-size: $body-font-size;
 }
+nav {
+    position: fixed;
+    bottom: 0;
+}
+
+
+@import './partials/Profile';
+@import './partials/Header';
