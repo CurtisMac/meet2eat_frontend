@@ -13,6 +13,7 @@ export default class JoinMeetup extends Component {
       // user:this.props.user,
       MeetupList: [],
       PickedTime: '',
+      PickedMeetup:{},
       step: 1
     }
     this.apiCreate='https://backend-m2e.herokuapp.com/'
@@ -28,21 +29,24 @@ export default class JoinMeetup extends Component {
     })
 let data=this.state.PickedTime
  axios.post(this.apiUrl1+'meetups', data).then((res)=>{
-  console.log(res.data)
+  this.setState({
+MeetupList:res.data.meetups
+  })
     })
 
   }
 
-  Pickedmeetup = () => {
-
+  Pickedmeetup = (meetup) => {
+    this.setState({
+      step: 3,
+      PickedMeetup: meetup
+    })
   }
 
   confirm = () => {
     let data = {
-      restaurant: this.state.pickedResto,
-      start: this.state.StarTime,
-      end: this.state.EndTime,
-      createdby: this.state.CreatedBy
+      PickedTime: this.state.PickedTime,
+      start: this.state.PickedTime,
     }
 
     // axios.post(this.apiCreat,data).then((res)=>{
@@ -50,6 +54,10 @@ let data=this.state.PickedTime
     // }) 
   }
 
+  back=()=>{
+    let back = this.state.step -1
+    this.setState({step:back})
+  }
 
   render() {
     if (this.state.step === 1) {
@@ -66,7 +74,7 @@ let data=this.state.PickedTime
         <div className="profile">
           <MeetupList
           MeetupList={this.state.MeetupList}
-
+          Pickedmeetup={this.Pickedmeetup}
           />
         </div>
       )
@@ -77,6 +85,7 @@ let data=this.state.PickedTime
         <div className="profile">
           <Confirm
             confirm={this.confirm}
+            back={this.back}
           />
         </div>
       )

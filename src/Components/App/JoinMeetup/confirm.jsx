@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 
 export default class Confirm extends Component {
 
@@ -21,9 +21,12 @@ export default class Confirm extends Component {
                     </li>
                 </ul>
                 <div className="buttons">
-                    <a className="btn btn-large">back</a>
-                    <a className="btn btn-large">confirm</a>
-                </div>
+                            <a className="btn btn-large" onClick={()=>{this.props.back()
+                                }}>back</a>
+                            <Link to="/complete" className="btn btn-large" onClick={()=>{
+                                this.props.confirm()
+                                }}>confirm</Link>
+                        </div>
             </div>
         );
     }
