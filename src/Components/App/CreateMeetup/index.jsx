@@ -21,10 +21,16 @@ export default class CreateMeetup extends Component {
 
   pickedResto=(input)=>{
 
+    this.setState({
+      step:2,
+      PickedResto:{},
+    })
   
   }
 
   pikedTime=(start, end)=>{
+    this.setState({step:3})
+
 
   }
 
