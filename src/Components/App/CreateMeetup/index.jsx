@@ -14,23 +14,23 @@ export default class CreateMeetup extends Component {
       StartTime: '',
       EndTime: '',
       // CreatedBy:this.props.user.name
-      step:1
+      step: 1
     }
-    // this.apiCreate='https://backend-m2e.herokuapp.com/'
+    this.apiCreate='https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
   componentWillMount = () => {
-   let user = this.props.user
-    axios.post(this.apiUrl1+'create', user).then((res) => {
-      console.log(res.data)
+    let user = this.props.user
+    axios.post(this.apiCreate + 'create', user).then((res) => {
+      this.setState({ ListResto: res.data })
     })
 
   }
 
   pickedResto = (input) => {
-
+    console.log(input)
     this.setState({
       step: 2,
       PickedResto: input
@@ -45,7 +45,7 @@ export default class CreateMeetup extends Component {
       EndTime: end
     })
 
- 
+
   }
 
   confirm = () => {
@@ -66,10 +66,12 @@ export default class CreateMeetup extends Component {
 
     if (this.state.step === 1) {
       return (
-  
+
         <div className="profile">
           <PickedResto
             pickedResto={this.pickedResto}
+            ListResto= {this.state.ListResto}
+
           />
         </div>
       )
@@ -91,9 +93,9 @@ export default class CreateMeetup extends Component {
             confirm={this.confirm}
           />
         </div>
- 
-      ) 
-    
+
+      )
+
     }
 
   }
