@@ -5,7 +5,7 @@ class Profile extends Component {
   render() {
     return (
       <div className="profile">
-        <img src="/profile_photo.jpeg" alt="" />
+        <img className="circle responsive-img" src="/profile_photo.jpeg" alt="" />
         <h3>Sandra</h3>
         <h4>Eats:</h4>
         <ul className="bodyText">
