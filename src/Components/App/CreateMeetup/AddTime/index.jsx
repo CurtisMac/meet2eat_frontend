@@ -21,6 +21,7 @@ export default class Pickedtime extends Component {
                 <input id="timer" type="text" />
                 <label className="bodyText" htmlFor="timer">End Time</label>
               </div>
+              <a className="btn btn-large">submit</a>
             </div>
           </form>
         </div>
