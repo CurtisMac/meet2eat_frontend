@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Profile from './Profile'
-import axios from 'axios'
+// import axios from 'axios'
 import Nav from './Nav'
 import Header from './Header'
 import CreateMeetup from './CreateMeetup'
@@ -44,7 +44,7 @@ class App extends Component {
           <Route path={`${match.url}create`} render={() =>
             <CreateMeetup />
           } />
-          <Route path={`${match.url}create`} render={() =>
+          <Route path={`${match.url}join`} render={() =>
             <JoinMeetup />
           } />
         </Switch>
