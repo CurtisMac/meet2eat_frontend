@@ -5,7 +5,7 @@ class JoinMeetup extends Component {
     render() {
         return (
             <div className="profile">
-              test
+              test2
             </div>
         );
     }

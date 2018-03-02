@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Profile from './Profile'
-import axios from 'axios'
+// import axios from 'axios'
 import Nav from './Nav'
 import Header from './Header'
 import CreateMeetup from './CreateMeetup'
@@ -37,6 +37,7 @@ class App extends Component {
         <Nav />
         <div className="container">
           <div className="row">
+
             <Switch>
               <Route exact path={match.url} render={() =>
                 <Profile
@@ -44,9 +45,11 @@ class App extends Component {
                 />
               } />
               <Route path={`${match.url}create`} render={() =>
-                <CreateMeetup />
+                <CreateMeetup
+                  user={this.state.userInfo}
+                />
               } />
-              <Route path={`${match.url}create`} render={() =>
+              <Route path={`${match.url}join`} render={() =>
                 <JoinMeetup />
               } />
             </Switch>

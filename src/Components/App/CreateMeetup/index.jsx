@@ -5,7 +5,11 @@ class CreateMeetup extends Component {
   constructor (){
     super()
     this.state={
-      
+      ListResto:[],
+      PickedResto:{},
+      StartTime:'',
+      EndTime:'',
+      CreatedBy:this.props.user.name
     }
   }
     render() {
