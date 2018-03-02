@@ -8,7 +8,7 @@ import CreateMeetup from './CreateMeetup'
 import JoinMeetup from './JoinMeetup'
 import { Route, Switch } from 'react-router-dom'
 import '../../Assets/css/styles.css';
-
+import PrivateRoute from './PrivateRoute'
 
 class App extends Component {
   constructor() {
