@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import axios from 'axios'
 import PickedResto from './PickResto'
 import AddTime from './AddTime'
-// import Confirm from './Confirm'
-import Complete from './Complete'
+import Confirm from './Confirm'
+//import Complete from './Complete'
 
 export default class CreateMeetup extends Component {
   constructor() {
@@ -14,7 +14,7 @@ export default class CreateMeetup extends Component {
       StartTime: '',
       EndTime: '',
       // CreatedBy:this.props.user.name
-      step:2
+      step:3
     }
     this.apiCreat = ''
   }
@@ -75,7 +75,7 @@ export default class CreateMeetup extends Component {
     if (this.state.step === 3) {
       return (
         <div className="profile">
-          <Complete
+          <Confirm
             confirm={this.confirm}
           />
         </div>

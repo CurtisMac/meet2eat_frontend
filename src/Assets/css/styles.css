@@ -79,3 +79,6 @@ ul.iconNav {
 
 .input-field label, input#timer {
   font-size: 1.5rem; }
+
+.buttons {
+  display: flex; }
