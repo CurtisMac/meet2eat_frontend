@@ -24,7 +24,7 @@ class App extends Component {
   componentWillMount = () => {
 
     const username = 'andrew'
-    axios.post(this.apiUrl1+'login', username).then((res) => {
+    axios.post(this.apiUrl1+'login', {username}).then((res) => {
       console.log(res.data)
     })
 
