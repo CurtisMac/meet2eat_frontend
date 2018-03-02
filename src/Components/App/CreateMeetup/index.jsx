@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios'
+import axios from 'axios'
 import PickedResto from './PickResto'
 import AddTime from './AddTime'
 import Confirm from './Confirm'
@@ -16,7 +16,16 @@ export default class CreateMeetup extends Component {
       // CreatedBy:this.props.user.name
       step:1
     }
-    this.apiCreat = ''
+    // this.apiCreate='https://backend-m2e.herokuapp.com/'
+    this.apiUrl1 = 'http://localhost:8080/'
+
+  }
+
+  componentDidMount = () => {
+   let user = this.props.user
+    axios.post(this.apiUrl1+'create', user).then((res) => {
+    })
+
   }
 
   pickedResto = (input) => {
@@ -53,6 +62,7 @@ export default class CreateMeetup extends Component {
 
 
   render() {
+
     if (this.state.step === 1) {
       return (
   
