@@ -44,7 +44,7 @@ export default class JoinMeetup extends Component {
 
     // axios.post(this.apiCreat,data).then((res)=>{
 
-    // })
+    // }) 
   }
 
 
