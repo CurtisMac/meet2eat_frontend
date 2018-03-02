@@ -27,16 +27,13 @@ class App extends Component {
     axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
       this.setState({ userInfo: res.data })
     })
-    console.log(this.state.userInfo)
-    axios.post(this.apiUrl1).then((res) => {
-      this.setState({ ListResto: res.data })
-    })
+  
   }
 
   login =(input)=>{
+    
     let {username }= input
     localStorage.setItem('username',username.value)
-  
   }
 
   render() {
