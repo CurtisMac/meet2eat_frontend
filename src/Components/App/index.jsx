@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Profile from './Profile'
-// import axios from 'axios'
+import axios from 'axios'
 import Nav from './Nav'
 import Header from './Header'
 import CreateMeetup from './CreateMeetup'
@@ -16,16 +16,17 @@ class App extends Component {
       userInfo: {}
     }
 
-    this.apiUrl = ''
+    // this.apiUrl = 'https://backend-m2e.herokuapp.com/'
+    this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
   componentWillMount = () => {
 
-
-    // axios.post(this.apiUrl,).then((res) => {
-
-    // })
+    const username = 'andrew'
+    axios.post(this.apiUrl1+'login', {username}).then((res) => {
+      console.log(res.data)
+    })
 
   }
 
