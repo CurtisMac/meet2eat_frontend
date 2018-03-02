@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 export default class Pickedtime extends Component {
 
- 
 
-  render() { 
+
+  render() {
     return (
       <div className="pickTime">
         <h3 className="center-align">Pick a time</h3>
@@ -14,8 +14,12 @@ export default class Pickedtime extends Component {
           <form className="col s12">
             <div className="row">
               <div className="input-field col s12">
-                <input id="timer" type="text"/>
-                <label className="bodyText" htmlFor="timer">Time</label>
+                <input id="timer" type="text" />
+                <label className="bodyText" htmlFor="timer">Start Time</label>
+              </div>
+              <div className="input-field col s12">
+                <input id="timer" type="text" />
+                <label className="bodyText" htmlFor="timer">End Time</label>
               </div>
             </div>
           </form>
