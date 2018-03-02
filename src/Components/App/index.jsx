@@ -42,7 +42,9 @@ class App extends Component {
             />
           } />
           <Route path={`${match.url}create`} render={() =>
-            <CreateMeetup />
+            <CreateMeetup 
+            user={this.state.userInfo}
+            />
           } />
           <Route path={`${match.url}join`} render={() =>
             <JoinMeetup />
