@@ -5,7 +5,7 @@ import PickedTime from './PickedTime'
 // import Confirm from './Confirm'
 import Complete from './Complete'
 
-class CreateMeetup extends Component {
+export default class CreateMeetup extends Component {
   constructor (){
     super()
     this.state={
@@ -63,4 +63,3 @@ class CreateMeetup extends Component {
     }
 }
 
-export default CreateMeetup;
