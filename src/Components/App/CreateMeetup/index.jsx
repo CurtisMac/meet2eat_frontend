@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import axios from 'axios'
 import PickedResto from './PickResto'
 import PickedTime from './PickedTime'
-import Confirm from './Confirm'
+// import Confirm from './Confirm'
 import Complete from './Complete'
 
 class CreateMeetup extends Component {
@@ -21,7 +21,7 @@ class CreateMeetup extends Component {
 
   pickedResto=(input)=>{
 
-
+  
   }
 
   pikedTime=(start, end)=>{
