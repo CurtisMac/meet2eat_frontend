@@ -8,7 +8,7 @@ export default class Complete extends Component {
   render() {
     return (
       <div className="restList">
-      tes
+      test
       </div>
     );
   }
