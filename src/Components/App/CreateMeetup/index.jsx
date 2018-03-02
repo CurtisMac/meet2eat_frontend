@@ -14,7 +14,7 @@ export default class CreateMeetup extends Component {
       StartTime: '',
       EndTime: '',
       // CreatedBy:this.props.user.name
-      step:3
+      step:2
     }
     this.apiCreat = ''
   }
