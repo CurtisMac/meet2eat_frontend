@@ -8,15 +8,15 @@ export default class Confirm extends Component {
         return (
             <div className="confrimMeet">
                 <h3 className="center-align">Almost there!</h3>
-                <h4 className="center-align">Confirm the details below:</h4>
+                <h4 className="center-align">Confirm the details of your meetup: </h4>
                 <ul className="collection">
                     <li className="collection-item avatar">
                         <img src={this.props.PickedResto.featured_image} alt="" className="circle" />
                         <span className="title">{this.props.PickedResto.name}</span>
                         <p>{this.props.PickedResto.location.address}<br />
                             {this.props.PickedResto.user_rating.rating_text}</p><br />
-                        <p>{this.props.StartTime}</p>
-                        <p>{this.props.EndTime}</p>
+                        <p>Start Time: {this.props.StartTime} pm</p>
+                        <p>End Time: {this.props.EndTime} pm</p>
                         <a href={this.props.PickedResto.menu_url} className="secondary-content"><i className="material-icons">restaurant_menu</i></a>
                     </li>
                 </ul>
