@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 class Profile extends Component {
   render() {
     return (
-      <div className="profile">
+      <div className="profile col s12">
         <img className="circle responsive-img" src="/profile_photo.jpeg" alt="" />
-        <h3>Sandra</h3>
+        <h3 className="center-align">Sandra</h3>
         <h4>Eats:</h4>
         <ul className="bodyText">
           <li>Pizza</li>

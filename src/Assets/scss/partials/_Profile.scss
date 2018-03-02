@@ -1,9 +1,19 @@
 
-
 h3 {
  color: #E2E8A8;
 }
 
 h4 {
     color: white;
+}
+
+img.circle.responsive-img {
+    max-width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+ul.bodyText {
+    display: flex;
+    justify-content: space-around;
 }

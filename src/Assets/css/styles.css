@@ -4,11 +4,7 @@ body {
 .bodyText {
   color: #7CCDD1;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 1rem; }
-
-nav {
-  position: fixed;
-  bottom: 0; }
+  font-size: 1.5rem; }
 
 h3 {
   color: #E2E8A8; }
@@ -16,8 +12,32 @@ h3 {
 h4 {
   color: white; }
 
+img.circle.responsive-img {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+ul.bodyText {
+  display: flex;
+  justify-content: space-around; }
+
 .heading {
-  color: #7CCDD1;
+  color: #485562;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 64px;
-  margin-left: 45px; }
+  background-color: #7CCDD1;
+  width: 100%;
+  position: fixed;
+  top: 0; }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  background-color: #FC7962; }
+
+nav i.material-icons {
+  font-size: 40px; }
+
+ul.iconNav {
+  display: flex;
+  justify-content: space-evenly; }

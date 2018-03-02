@@ -1,0 +1,14 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #FC7962;
+}
+
+nav i.material-icons {
+    font-size: 40px;
+}
+
+ul.iconNav {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -29,25 +29,29 @@ class App extends Component {
   }
 
   render() {
-		const { match } = this.props
+    const { match } = this.props
 
     return (
       <div className="App">
         <Header />
         <Nav />
-        <Switch>
-          <Route exact path={match.url} render={() =>
-            <Profile 
-            userInfo={this.state.userInfo}
-            />
-          } />
-          <Route path={`${match.url}create`} render={() =>
-            <CreateMeetup />
-          } />
-          <Route path={`${match.url}create`} render={() =>
-            <JoinMeetup />
-          } />
-        </Switch>
+        <div className="container">
+          <div className="row">
+            <Switch>
+              <Route exact path={match.url} render={() =>
+                <Profile
+                  userInfo={this.state.userInfo}
+                />
+              } />
+              <Route path={`${match.url}create`} render={() =>
+                <CreateMeetup />
+              } />
+              <Route path={`${match.url}create`} render={() =>
+                <JoinMeetup />
+              } />
+            </Switch>
+          </div>
+        </div>
       </div>
     );
   }
