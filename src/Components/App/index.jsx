@@ -21,10 +21,11 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-    // axios.post(this.apiUrl).then((res) => {
 
+    
+    // axios.post(this.apiUrl,).then((res) => {
+ 
     // })
-
 
   }
 
@@ -55,6 +56,23 @@ class App extends Component {
             </Switch>
           </div>
         </div>
+        <Switch>
+          <Route exact path={match.url} render={() =>
+            <Profile 
+            userInfo={this.state.userInfo}
+            />
+          } />
+          <Route path={`${match.url}create`} render={() =>
+            <CreateMeetup 
+            user={this.state.userInfo}
+            />
+          } />
+          <Route path={`${match.url}join`} render={() =>
+            <JoinMeetup />
+          } />
+
+          
+        </Switch>
       </div>
     );
   }
