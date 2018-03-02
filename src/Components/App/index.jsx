@@ -24,7 +24,7 @@ class App extends Component {
 
   componentDidUpdate=()=>{
     const  username = localStorage.getItem('username')
-    axios.post(this.apiUrl + 'login', { username }).then((res) => {
+    axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
       this.setState({ userInfo: res.data })
     })
   }
