@@ -21,11 +21,10 @@ export default class CreateMeetup extends Component {
 
   }
 
-  componentDidlMount = () => {
-   let id = this.props.user.id
-    axios.post(this.apiUrl1+'create', id).then((res) => {
-    
-      console.log(res.data)
+  componentDidMount = () => {
+   let user = this.props.user
+    axios.post(this.apiUrl1+'create', user).then((res) => {
+    console.log(res.data)
     })
 
   }

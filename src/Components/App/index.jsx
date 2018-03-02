@@ -25,7 +25,7 @@ class App extends Component {
 
     const username = 'andrew'
     axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
-      this.setState({ userInfo: res.data.info })
+      this.setState({ userInfo: res.data })
     })
 
   }
