@@ -6,7 +6,7 @@ export default class Profile extends Component {
     let user = this.props.userInfo
     return (
       <div className="profile col s12">
-        <img className="circle responsive-img" src="/profile_photo.jpeg" alt="" />
+        <img className="circle responsive-img" src={user.photo} alt="" />
         <h3 className="center-align">{user.name}</h3>
         <h4>Eats <i className="em em-hamburger"></i></h4>
         <ul className="bodyText">
