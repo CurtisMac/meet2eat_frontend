@@ -21,7 +21,7 @@ export default class CreateMeetup extends Component {
 
   }
 
-  componentDidMount = () => {
+  componentWillMount = () => {
    let user = this.props.user
     axios.post(this.apiUrl1+'create', user).then((res) => {
     })
