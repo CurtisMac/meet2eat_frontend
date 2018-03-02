@@ -13,10 +13,12 @@ export default class Confirm extends Component {
                 <ul className="collection">
                     <li className="collection-item avatar">
                         <img src="/noodles.jpeg" alt="" className="circle" />
-                        <span className="title">Pholicious</span>
-                        <p>insert address<br />
+                        <span className="title">{this.props.PickedMeetup.restaurant}</span>
+                        <p>{this.props.PickedMeetup.address}<br />
                             insert rating</p><br />
-                        <p> at 2pm</p>
+                            <p>Start at:{this.props.PickedMeetup.start}</p>
+                        <p>end at:{this.props.PickedMeetup.end}</p>
+                        <p>by {this.props.PickedMeetup.username}</p>
                         <a href="#!" className="secondary-content"><i className="material-icons">restaurant_menu</i></a>
                     </li>
                 </ul>

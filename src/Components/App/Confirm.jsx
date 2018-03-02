@@ -16,7 +16,6 @@ export default class Confirm extends Component {
                         <p>{this.props.PickedResto.location.address}<br />
                             {this.props.PickedResto.user_rating.rating_text}</p><br />
                         <p>Start Time: {this.props.StartTime} pm</p>
-                        <p>End Time: {this.props.EndTime} pm</p>
                         <a href={this.props.PickedResto.menu_url} className="secondary-content"><i className="material-icons">restaurant_menu</i></a>
                     </li>
                 </ul>

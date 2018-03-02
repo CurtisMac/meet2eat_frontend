@@ -3,6 +3,7 @@ import PickedTime from './PickedTime'
 import MeetupList from './MeetupList'
 import Confirm from './confirm'
 import axios from 'axios'
+// import Confirm from '../Confirm'
 
 
 
@@ -29,6 +30,7 @@ export default class JoinMeetup extends Component {
     })
 let data=this.state.PickedTime
  axios.post(this.apiUrl1+'meetups', data).then((res)=>{
+  console.log(res.data)
   this.setState({
 MeetupList:res.data.meetups
   })
@@ -85,6 +87,9 @@ MeetupList:res.data.meetups
         <div className="profile">
           <Confirm
             confirm={this.confirm}
+            PickedMeetup= {this.state.PickedMeetup}
+            PickedTime= {this.state.PickedTime}
+            EndTime= {this.state.EndTime}
             back={this.back}
           />
         </div>
