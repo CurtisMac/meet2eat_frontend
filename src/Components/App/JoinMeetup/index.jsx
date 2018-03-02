@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PickedTime from './PickedTime'
-import MeetupList from './PickedTime'
+import MeetupList from './MeetupList'
 import Complete from './complete'
 // import confirm from './Confirm'
 
