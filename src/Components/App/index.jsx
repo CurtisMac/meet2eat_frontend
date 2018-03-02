@@ -44,7 +44,7 @@ class App extends Component {
           <Route path={`${match.url}create`} render={() =>
             <CreateMeetup />
           } />
-          <Route path='/join' render={() =>
+          <Route path={`${match.url}create`} render={() =>
             <JoinMeetup />
           } />
         </Switch>
