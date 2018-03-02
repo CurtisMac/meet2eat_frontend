@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
 
-class Profile extends Component {
+export default class Profile extends Component {
   render() {
+    let user = this.props.userInfo
+    console.log(user)
     return (
       <div className="profile col s12">
         <img className="circle responsive-img" src="/profile_photo.jpeg" alt="" />
-        <h3 className="center-align">Sandra</h3>
+        <h3 className="center-align">{user.name}</h3>
         <h4>Eats <i className="em em-hamburger"></i></h4>
         <ul className="bodyText">
           <li>Pizza</li>
@@ -20,12 +22,10 @@ class Profile extends Component {
         <p className="bodyText"> <i className="em em-round_pushpin"></i>455 Granville, Vancouver, Bc.</p>
         <h4>Bio</h4>
         <p className="bodyText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis quam lorem. Praesent 
-          facilisis, est non consequat eleifend, turpis neque semper odio, a scelerisque est est eget nisi. 
-          Proin vitae neque sed lectus egestas pretium.</p>
+          {user.bio}</p>
       </div>
     );
   }
 }
 
-export default Profile;
+

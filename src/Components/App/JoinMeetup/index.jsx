@@ -12,7 +12,7 @@ export default class JoinMeetup extends Component {
       // user:this.props.user,
       MeetupList: [],
       PickedTime: '',
-      step: 1
+      step: 2
     }
     this.apiJoin = ''
   }
