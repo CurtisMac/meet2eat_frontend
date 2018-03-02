@@ -9,7 +9,7 @@ class Login extends Component {
         return (
             <div className="logIn">
                 <h3 className="center-align">Start Here</h3>
-                <form className="col s12" ref={self => this.loginForm = self}>
+                <form className="col s12" ref={self => this.loginForm = self} onSubmit={()=>{this.props.login(this.loginForm)}}>
                     <div className="row">
                         <div className="input-field col s12">
                             <input id="username" type="text" className="validate" name="username"/>
@@ -22,7 +22,7 @@ class Login extends Component {
                             <label htmlFor="password">Password</label>
                         </div>
                     </div>
-                    <Link to='/' type="submit" name="login" className="btn btn-large" onClick={()=>{this.props.login(this.loginForm)}}>Go!</Link>
+                    <Link to='/' type="submit" name="login" className="btn btn-large">Go!</Link>
                 </form>
             </div>
         );
