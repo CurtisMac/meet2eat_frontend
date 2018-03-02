@@ -7,7 +7,8 @@ export default class PickedResto extends Component {
 
   render() {
     return (
-      <div className="restList row">
+      
+      <div className="restList col s12">
         <ul className="collection">
           <li className="collection-item avatar">
             <img src="noodles.jpeg" alt="" className="circle" />

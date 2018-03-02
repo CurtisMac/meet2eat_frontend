@@ -7,7 +7,7 @@ export default class Pickedtime extends Component {
 
   render() {
     return (
-      <div className="restList">
+      <div className="pickTime">
         <h3 className="center-align">Pick a time</h3>
         <h3 className="center-align"><i className="large material-icons">access_time</i></h3>
         <div className="row">
@@ -15,7 +15,7 @@ export default class Pickedtime extends Component {
             <div className="row">
               <div className="input-field col s12">
                 <input id="timer" type="text"/>
-                <label className="bodyText" for="timer" data-error="wrong" data-success="right">Time</label>
+                <label className="bodyText" for="timer">Time</label>
               </div>
             </div>
           </form>

@@ -2,18 +2,19 @@ body {
     background-color:#485562;
 }
 
-.container {
-    height: auto;
-    padding-top: 140px;
+html {
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
-$body-font: 'Fira Sans Condensed', sans-serif;
+.container {
+    padding: 40% 0 40% 0;
+}
+
 $body-color: #7CCDD1;
 $body-font-size:1.5rem;
 
 .bodyText {
     color: $body-color;
-    font-family: $body-font;
     font-size: $body-font-size;
 }
 
@@ -22,6 +23,7 @@ $h3-font-color:#E2E8A8;
 h3 {
  color: $h3-font-color;
 }
+
 
 
 @import './partials/Profile';

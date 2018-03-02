@@ -14,7 +14,11 @@ export default class CreateMeetup extends Component {
       StartTime: '',
       EndTime: '',
       // CreatedBy:this.props.user.name
+<<<<<<< HEAD
       step:2
+=======
+      step:1
+>>>>>>> bc8ab17051544d0f251d0c3e997bf49595f5a264
     }
     this.apiCreat = ''
   }
@@ -55,6 +59,7 @@ export default class CreateMeetup extends Component {
   render() {
     if (this.state.step === 1) {
       return (
+  
         <div className="profile">
           <PickedResto
             pickedResto={this.pickedResto}
@@ -79,7 +84,9 @@ export default class CreateMeetup extends Component {
             confirm={this.confirm}
           />
         </div>
-      )
+ 
+      ) 
+    
     }
 
   }

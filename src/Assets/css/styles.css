@@ -1,13 +1,14 @@
 body {
   background-color: #485562; }
 
+html {
+  font-family: 'Fira Sans Condensed', sans-serif; }
+
 .container {
-  height: auto;
-  padding-top: 140px; }
+  padding: 40% 0 40% 0; }
 
 .bodyText {
   color: #7CCDD1;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1.5rem; }
 
 h3 {
