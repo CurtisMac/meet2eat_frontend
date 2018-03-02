@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PickedTime from './PickedTime'
 import MeetupList from './MeetupList'
 import Confirm from './confirm'
-// import confirm from './Confirm'
 import axios from 'axios'
 
 

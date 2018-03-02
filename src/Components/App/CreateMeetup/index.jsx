@@ -13,17 +13,16 @@ export default class CreateMeetup extends Component {
       PickedResto: {},
       StartTime: '',
       EndTime: '',
-      // CreatedBy:this.props.user.name
       step: 1
     }
-    this.apiCreate='https://backend-m2e.herokuapp.com/'
+    this.apiCreate = 'https://backend-m2e.herokuapp.com/'
     this.apiUrl1 = 'http://localhost:8080/'
 
   }
 
   componentWillMount = () => {
     let user = this.props.user
-    axios.post(this.apiUrl1, {lat:user.currentLocation.lat,long:user.currentLocation.long}).then((res) => {
+    axios.post(this.apiUrl1, { lat: user.currentLocation.lat, long: user.currentLocation.long }).then((res) => {
       this.setState({ ListResto: res.data[0].nearby_restaurants })
     })
 
@@ -39,29 +38,33 @@ export default class CreateMeetup extends Component {
   }
 
   pikedTime = (start, end) => {
+
     this.setState({
       step: 3,
-      StartTime: start,
-      EndTime: end
+      StartTime: start.value,
+      EndTime: end.value
     })
 
-    console.log(this.state.StartTime)
 
   }
 
   confirm = () => {
-    let data = {
-      restaurant: this.state.pickedResto,
-      start: this.state.StarTime,
-      end: this.state.EndTime,
-      createdby: this.state.CreatedBy
-    }
+    // let data = {
+    //   restaurant: this.state.pickedResto,
+    //   start: this.state.StarTime,
+    //   end: this.state.EndTime,
+    //   createdby: this.props.user.name
+    // }
 
     // axios.post(this.apiUrl1 + create, data).then((res)=>{
 
     // })
   }
 
+  back=()=>{
+    let back = this.state.step -1
+    this.setState({step:back})
+  }
 
   render() {
 
@@ -71,7 +74,7 @@ export default class CreateMeetup extends Component {
         <div className="profile">
           <PickedResto
             pickedResto={this.pickedResto}
-            ListResto= {this.state.ListResto}
+            ListResto={this.state.ListResto}
 
           />
         </div>
@@ -92,7 +95,11 @@ export default class CreateMeetup extends Component {
         <div className="profile">
           <Confirm
             confirm={this.confirm}
-          />
+            PickedResto= {this.state.PickedResto}
+            StartTime= {this.state.StartTime}
+            EndTime= {this.state.EndTime}
+            back={this.back}
+        />
         </div>
 
       )

@@ -9,6 +9,8 @@ import JoinMeetup from './JoinMeetup'
 import { Route, Switch } from 'react-router-dom'
 import '../../Assets/css/styles.css';
 import PrivateRoute from './PrivateRoute'
+import Complete from './complete'
+
 
 class App extends Component {
   constructor() {
@@ -67,6 +69,10 @@ class App extends Component {
               <Route path={`${match.url}login`} render={() =>
                 <Login
                   login={this.login}
+                />
+              } />
+              <Route path={`${match.url}complete`} render={() =>
+                <Complete
                 />
               } />
             </Switch>
