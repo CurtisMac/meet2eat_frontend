@@ -9,7 +9,7 @@ class CreateMeetup extends Component {
       PickedResto:{},
       StartTime:'',
       EndTime:'',
-      CreatedBy:this.props.user.name
+      // CreatedBy:this.props.user.name
     }
   }
     render() {

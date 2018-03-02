@@ -21,10 +21,11 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-    // axios.post(this.apiUrl).then((res) => {
 
+    
+    // axios.post(this.apiUrl,).then((res) => {
+ 
     // })
-
 
   }
 
@@ -49,6 +50,8 @@ class App extends Component {
           <Route path={`${match.url}join`} render={() =>
             <JoinMeetup />
           } />
+
+          
         </Switch>
       </div>
     );
