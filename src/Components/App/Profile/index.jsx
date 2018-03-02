@@ -8,7 +8,7 @@ class Profile extends Component {
         <img src="/profile_photo.jpeg" alt="" />
         <h3>Sandra</h3>
         <h4>Eats:</h4>
-        <ul>
+        <ul className="bodyText">
           <li>Pizza</li>
           <li>Sushi</li>
           <li>Hotpot</li>
@@ -17,7 +17,7 @@ class Profile extends Component {
           <li>Tacos</li>
         </ul>
         <h4>Current Location:</h4>
-        <p> 455 Granville, Vancouver, Bc.</p>
+        <p className="bodyText"> 455 Granville, Vancouver, Bc.</p>
 
       </div>
     );
