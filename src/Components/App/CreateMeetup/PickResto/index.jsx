@@ -9,7 +9,7 @@ export default class PickedResto extends Component {
       PickedResto: {},
       StartTime: '',
       EndTime: '',
-      CreatedBy: this.props.user.name
+      // CreatedBy: this.props.user.name
     }
   }
 
