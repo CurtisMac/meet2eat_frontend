@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
 
 
-class CreateMeetup extends Component {
-  constructor (){
-    super()
-    this.state={
-      ListResto:[],
-      PickedResto:{},
-      StartTime:'',
-      EndTime:'',
-      CreatedBy:this.props.user.name
-    }
-  }
+class PickedResto extends Component {
+ 
   
     render() {
         return (
             <div className="profile">
-              test
+              pickedresto component
             </div>
         );
     }
 }
 
-export default CreateMeetup;
+export default PickedResto;
