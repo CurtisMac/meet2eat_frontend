@@ -22,24 +22,17 @@ class App extends Component {
 
   }
 
-  componentDidUpdate
-
-  componentWillMount = () => {
-
+  componentDidUpdate=()=>{
     const  username = localStorage.getItem('username')
     axios.post(this.apiUrl1 + 'login', { username }).then((res) => {
       this.setState({ userInfo: res.data })
     })
-
   }
 
   login =(input)=>{
-    let {username , password}= input
+    let {username }= input
     localStorage.setItem('username',username.value)
-    // this.setState({login:{
-    //   username:username.value,
-    // password:password.value}})
-
+  
   }
 
   render() {
