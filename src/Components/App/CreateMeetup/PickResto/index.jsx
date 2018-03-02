@@ -2,16 +2,8 @@ import React, { Component } from 'react';
 
 
 export default class PickedResto extends Component {
-  constructor() {
-    super()
-    this.state = {
-      ListResto: [],
-      PickedResto: {},
-      StartTime: '',
-      EndTime: '',
-      // CreatedBy: this.props.user.name
-    }
-  }
+ 
+  
 
   render() {
     return (
