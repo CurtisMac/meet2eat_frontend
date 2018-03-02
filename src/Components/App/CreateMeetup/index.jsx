@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import axios from 'axios'
 import PickedResto from './PickResto'
 import AddTime from './AddTime'
-import Confirm from './confirm'
+import Confirm from './Confirm'
 //import Complete from './Complete'
 
 export default class CreateMeetup extends Component {
